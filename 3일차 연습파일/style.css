@@ -1,0 +1,44 @@
+.sct01 {
+    height: 100vh;
+    /* 해상도/화면 높이 단위 vh 화면 크기 */
+    background-color: #f2faf0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.sctbox {
+    /* 똑같은 클래스를 앞에 달아줘서 여러번 작성 x - alt클릭시 여러커서 한번에 수정 가능 */
+    width: 250px;   height: 600px;
+    background-color: #272926;
+}
+
+.sct02 {
+    height: 100vh;
+    /* 해상도/화면 높이 단위 vh 화면 크기 */
+    background-color: #cbd4c9;
+}
+
+.sct03 {
+    height: 100vh;
+    /* 해상도/화면 높이 단위 vh 화면 크기 */
+    background-color: #a4aba2;
+}
+
+.sct04 {
+    height: 100vh;
+    /* 해상도/화면 높이 단위 vh 화면 크기 */
+    background-color: #7d827c;
+}
+
+.sct05 {
+    height: 100vh;
+    /* 해상도/화면 높이 단위 vh 화면 크기 */
+    background-color: #60665f;
+}
+
+.sct06 {
+    height: 100vh;
+    /* 해상도/화면 높이 단위 vh 화면 크기 */
+    background-color: #434742;
+}
