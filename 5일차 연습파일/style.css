@@ -1,0 +1,68 @@
+/* body { background-color: blue; } => css 연결 확인 */ 
+
+/* 홈페이지 상단 */
+header {
+    background-color: #d3e4d3;
+    height: 86px;
+
+    /* 항목 좌우 정렬 */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    /* background-color: #a8bda9; */
+    display: flex;
+    gap: 20px;
+    /* justify-content: space-between; */
+    /* align-items: center; */
+
+}
+.nav-box01 {
+    width: 92px; height: 12px;
+    border-radius: 2px;
+    background: #CFCFCF;   
+}
+.nav-box02 {
+    background-color: #CFCFCF;
+    border-radius: 2px;
+    width: 112px; height: 12px;
+}
+.nav-box03 {
+    background-color: #CFCFCF;
+    border-radius: 2px;
+    width: 148px; height: 12px;
+}
+.nav-box04 {
+    background-color: #CFCFCF;
+    border-radius: 2px;
+    width:  72px; height: 12px;
+}
+.nav-box05 {
+    background-color: #CFCFCF;
+    border-radius: 2px;
+    width: 88px; height: 12px;
+}
+
+h1 {
+    background-color: #819181;
+}
+.user-menu {
+    background-color: #69746a;
+}
+
+
+
+/* 홈페이지 메인 */
+main {
+    background-color: #819181;
+    height: 400vh;
+}
+
+
+/* 홈페이지 하단 */
+footer {
+    background-color: #474e47;
+    height: 64px;
+}
