@@ -1,0 +1,25 @@
+header {
+    border-bottom: 2px solid grey;
+    width: 1920px;
+    height: 86px;
+}
+.sct-01 {
+    background-color: aqua;
+    display: flex;
+    gap: 20px;
+}
+.sct-01, .sct-02, .sct-03, .sct-04 {
+    background-color: bisque;
+    border-bottom: 2px solid #000;
+}
+main {
+    border-bottom: 2px solid grey; 
+    width: 1920px;
+    height: 2526px;
+}
+
+footer {
+    border-bottom: 2px solid grey;
+    width: 1920px;
+    height: 68px;
+}
