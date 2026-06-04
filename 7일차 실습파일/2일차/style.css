@@ -7,7 +7,7 @@
 header  {
     background-color: #b7d3be;
     height: 85px; 
-    /* width: 1920px; */
+    width: 1920px;
     border: 2px solid gray;
     display: flex;
     justify-content: space-between;
@@ -104,14 +104,16 @@ nav {
 main {
     background-color: #98ad9e;
     height: 2526px;
-    border: 2px solid gray;
-    padding-left: 64px;
-    padding-right: 64px;
+    width: 1920px;
+
+    padding: 64px;
 }
+
 .sct01 {
     background-color: #acb6af;
     width: 1792px;
     height: 610px;
+    border: 2px solid gray;
     display: flex;
     flex-direction: row;
     gap: 36px;
@@ -124,6 +126,10 @@ main {
     background-color: #3a4238;
     width: 656px;
     height: 610px;
+    gap: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .sct01-rbox01 {
@@ -132,11 +138,24 @@ main {
     height: 289px;
 }
 .sct01-rbox02 {
-    background-color: gray;
+    background-color: rgb(102, 99, 99);
     width: 656px;
     height: 289px;
 }
 
+
+.sct02 {
+    background-color: #acb6af;
+    border: 2px solid gray;
+}
+.sct03 {
+    background-color: #acb6af;
+    border: 2px solid gray;
+}
+.sct04 {
+    background-color: #acb6af;
+    border: 2px solid gray;
+}
 
 
 /* 홈페이지 하단 */
@@ -144,6 +163,7 @@ main {
 footer {
     background-color: #7f9184;
     height: 68px;
+    width: 1920px;
     border: 2px solid gray;
     padding-left: 64px;
     padding-right: 64px;
