@@ -7,55 +7,60 @@
 header  {
     background-color: #b7d3be;
     height: 85px; 
-    width: 1920px;
+    /* width: 1920px; */
     border: 2px solid gray;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding-left: 64px;
     padding-right: 64px;
 }
+
+
+
+
+/* 상단바 네비(좌) */
 nav {
     /* background-color: #98ad9e; */
     display: flex;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center; */
+    /* align-items: center; */
     gap: 20px;
 }
-.nav-box01 {
+
+.nav-box01, .nav-box02, .nav-box03, .nav-box04, .nav-box05 {
     background-color: #7f9184;
     border-radius: 2px;
-    width: 92px;
     height: 12px;
+}
+
+
+.nav-box01 {
+    width: 92px;
 }
 .nav-box02 {
-    background-color: #7f9184;
-    border-radius: 2px;
     width: 112px;
-    height: 12px;
+
 }
 .nav-box03 {
-    background-color: #7f9184;
-    border-radius: 2px;
     width: 148px;
-    height: 12px;
 }
 .nav-box04 {
-    background-color: #7f9184;
-    border-radius: 2px;
     width: 72px;
-    height: 12px;
 }
 .nav-box05 {
-    background-color: #7f9184;
-    border-radius: 2px;
     width: 88px;
-    height: 12px;
 }
 
 
+/* 상단바 로고(중) */
 .logo-box {
     background-color: #7f9184;
 }
+
+
+
+/* 상단바 유저메뉴(우) */
 .user-menu {
     /* background-color: #4c524d; */
     display: flex;
@@ -63,64 +68,55 @@ nav {
     align-items: center;
     gap: 32px;
 }
-.user-box01 {
+
+.user-box01, .user-box02, .user-box03, .user-box04, .user-box05 {
     background-color: #7f9184;
     border-radius: 2px;
-    width: 68px;
     height: 12px;
 }
+
 .user-box01 {
-    background-color: #7f9184;
-    border-radius: 2px;
     width: 68px;
-    height: 12px;
+}
+.user-box01 {
+    width: 68px;
 }
 .user-box02 {
-    background-color: #7f9184;
-    border-radius: 2px;
     width: 92px;
-    height: 12px;
 }
 .user-box03 {
-    background-color: #7f9184;
-    border-radius: 2px;
     width: 58px;
-    height: 12px;
 }
 .user-box04 {
-    background-color: #7f9184;
-    border-radius: 2px;
     width: 84px;
-    height: 12px;
 }
 .user-box05 {
-    background-color: #7f9184;
-    border-radius: 2px;
     width: 36px;
-    height: 12px;
 }
+
 
 /* 홈페이지 메인 */
 main {
     background-color: #98ad9e;
-    height: 2526px;
-    width: 1920px;
-
+    height: 400vh;
+    /* width: 1920px; */
     padding: 64px;
 }
 
-.sct01 {
+.sct01, .sct02, .sct03, .sct04 {
     background-color: #acb6af;
-    width: 1792px;
-    height: 610px;
-    border: 2px solid gray;
+    border: 2px solid gray; 
+}
+
+.sct01 {
     display: flex;
     flex-direction: row;
-    gap: 36px;
+    gap: 36px;  
 }
+
 .sct01-left {
     background-color: #495c45;
-    width: 1100px; height: 610px;
+    flex-grow: 1;
 }
 .sct01-right {
     background-color: #3a4238;
@@ -134,8 +130,9 @@ main {
 
 .sct01-rbox01 {
     background-color: gray;
-    width: 656px;
-    height: 289px;
+    /* width: 656px;
+    height: 289px; */
+    flex-grow: 1;    
 }
 .sct01-rbox02 {
     background-color: rgb(102, 99, 99);
@@ -144,18 +141,7 @@ main {
 }
 
 
-.sct02 {
-    background-color: #acb6af;
-    border: 2px solid gray;
-}
-.sct03 {
-    background-color: #acb6af;
-    border: 2px solid gray;
-}
-.sct04 {
-    background-color: #acb6af;
-    border: 2px solid gray;
-}
+
 
 
 /* 홈페이지 하단 */
