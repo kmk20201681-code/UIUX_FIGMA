@@ -1,0 +1,111 @@
+/* body {
+    background-color: antiquewhite;
+} */
+
+header  {
+    background-color: #b7d3be;
+    height: 85px; 
+    /* width: 1920px; */
+    border: 2px solid gray;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 64px;
+    padding-left: 64px;
+}
+nav {
+    /* background-color: #98ad9e; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.nav-box01 {
+    background-color: #7f9184;
+    border-radius: 2px;
+    width: 92px;
+    height: 12px;
+}
+.nav-box02 {
+    background-color: #7f9184;
+    border-radius: 2px;
+    width: 112px;
+    height: 12px;
+}
+.nav-box03 {
+    background-color: #7f9184;
+    border-radius: 2px;
+    width: 148px;
+    height: 12px;
+}
+.nav-box04 {
+    background-color: #7f9184;
+    border-radius: 2px;
+    width: 72px;
+    height: 12px;
+}
+.nav-box05 {
+    background-color: #7f9184;
+    border-radius: 2px;
+    width: 88px;
+    height: 12px;
+}
+
+
+.logo-box {
+    background-color: #7f9184;
+}
+.user-menu {
+    /* background-color: #4c524d; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
+.user-box01 {
+    background-color: #7f9184;
+    border-radius: 2px;
+    width: 68px;
+    height: 12px;
+}
+.user-box01 {
+    background-color: #7f9184;
+    border-radius: 2px;
+    width: 68px;
+    height: 12px;
+}
+.user-box02 {
+    background-color: #7f9184;
+    border-radius: 2px;
+    width: 92px;
+    height: 12px;
+}
+.user-box03 {
+    background-color: #7f9184;
+    border-radius: 2px;
+    width: 58px;
+    height: 12px;
+}
+.user-box04 {
+    background-color: #7f9184;
+    border-radius: 2px;
+    width: 84px;
+    height: 12px;
+}
+.user-box05 {
+    background-color: #7f9184;
+    border-radius: 2px;
+    width: 36px;
+    height: 12px;
+}
+
+main {
+    background-color: #98ad9e;
+    height: 2526px;
+    border: 2px solid gray;
+}
+
+footer {
+    background-color: #7f9184;
+    height: 68px;
+    border: 2px solid gray;
+}
