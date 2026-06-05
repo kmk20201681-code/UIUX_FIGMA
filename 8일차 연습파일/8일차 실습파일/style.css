@@ -44,6 +44,13 @@ main {
     background-color: #adc2ad;
     flex-grow: 1;
 }
+.sct-03 {
+    border: 1px solid red;
+}
+
+
+
+
 footer {
     border-bottom: 2px dashed #bfd6be;
     /* width: 1920px; */
