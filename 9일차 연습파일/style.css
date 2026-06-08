@@ -1,0 +1,44 @@
+.grid {
+    background-color: #71887d;
+    width: 950px;
+    /* 중앙으로 설정 main태그는 제약이 많아서 하위요소에 사용 */
+    margin-left: auto; margin-right: auto;
+}
+
+.section01 {
+    background-color: #b4c5bd;
+    height: 950px;
+    /* 피그마 1920너비는 제작하기 위함이고 코드짤때는 입력하지 않음 (자동으로됨)
+    딱 화면 만큼만 가져오고 싶을 경우 높이는 100vh 설정 */
+    /* 중앙정렬 */
+    display: flex; flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sct-01-top-box {
+    width: 100%;
+    height: 200px;
+    background: #E8F3EA;
+}
+
+/* h2 {
+    border: 1px solid #000 ;
+} */
+
+.sct-01-bottom-box {
+    height: 331px;
+    background: #ACBCA9;
+    /* 상자하나를 고정시키고 나머지를  */
+    /* flex-grow: 1; */
+    width: 100%;
+}
+
+span {
+    border: 1px solid #000 ;
+    display: inline-flex;
+    padding: 20px;
+}
+
+
+
