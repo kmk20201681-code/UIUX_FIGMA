@@ -1,0 +1,94 @@
+main {
+    /* background-color: antiquewhite; */
+    padding: 200px 0;
+}
+ .brand-story-section {
+    background-color: #616863;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 63px;
+    padding-left: 40px;
+    padding-right: 40px;
+
+ }
+
+ /* 왼쪽박스 */
+.bs-left-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+}
+.bs-left-box-01 {
+    display: flex;
+    flex-direction: row;
+}
+.bs-left-box-01img {
+    background-color: #c4d1c8; 
+
+}
+.bs-lest-box-01text {
+    background-color: #a1afa6;
+    padding: 0 20px; 
+}
+.bs-left-box01-text01 {}
+.bs-left-box01-text02 {}
+.bs-left-box01-text03 {
+    padding-top: 20px;
+}
+
+
+
+/* 오른쪽박스 */
+.bs-right-box {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+/* 오른쪽 박스- 왼쪽 */
+.rtleft-box {
+    gap: 10px;
+}
+.bs-main-box-img {
+    width: 338px;
+    height: 450px;
+}
+.bs-main-text02 {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+
+/* 오른쪽 박스- 오른쪽 */
+.rtright-box {
+    display: flex;
+    flex-direction: column;
+}
+.bs-rt-li  {
+    gap: 30px;
+    display: flex;
+    flex-direction: row;
+    border-top: 1px solid #000000;
+    border-bottom: 0.5px solid #000000;
+    padding: 16px 18px 15px 0;
+
+}
+.bs-rt-liimg  {
+    width: 126px;
+    height: 168px;
+}
+.bs-rt-litext {
+    padding-bottom: 140px;
+}
+
+.bs-right-box-list04 {
+    gap: 30px;
+    display: flex;
+    flex-direction: row;
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+    padding: 16px 18px 15px 0;
+}
