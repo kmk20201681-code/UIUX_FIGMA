@@ -1,0 +1,87 @@
+body {
+    border: 1px solid #bfd6be;
+    background: #FFF;
+}
+
+header {
+    border-bottom: 2px solid #bfd6be;
+    height: 86px;
+}
+main {
+    border-bottom: 2px dashed #bfd6be;
+    /* width: 1920px; */
+    height: 2526px;
+    padding: 64px;
+}
+
+.sct-01, .sct-02, .sct-03, .sct-04 {
+    background-color: #93a592;
+    border-bottom: 1px solid #000;
+}
+.sct-01 {
+    /* background-color: antiquewhite; */
+    display: flex;
+    gap: 20px;
+
+}
+.sct01-left {
+    width: 1100px;  height: 610px;
+    background-color: yellow;
+}
+.sct01-right {
+    background-color: green;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    
+}
+.sct01-rbox01 {
+    background-color: #bfd6be;
+    flex-grow: 1;
+}
+.sct01-rbox02 {
+    background-color: #adc2ad;
+    flex-grow: 1;
+}
+
+.sct-03 {
+    /* background-color: #bfd6be; 배경색 대신 보더 사용함 */
+    border: 1px solid red;
+    display: flex;
+    /* ---- 줄바꿈 여백 제어하는 방법---- */
+    /* flex-wrap: wrap;줄바꿈 */
+    flex-wrap: wrap;
+    /* 중간에 동일한 여백 gap없이 남는 공간을빠짐 없이 사용하는 코드 (가로정렬) justify-content: space-between;  */
+    justify-content: space-between;
+    /* 줄바꿈을 허용했을때 세로 정렬 align-content: space-between; -> 세로 고정값두고 */
+    /*-->>  height: 600px;
+    align-content: space-between; */
+
+    /* gap은 보통 가로 but gap으로 세로여백 조절가능  */
+    row-gap: 20px;
+}
+
+
+
+
+
+/* 한줄 정렬 (컨테이너에게)
+    display: flex;
+    -> 
+    justify-content: center;
+    flex-direction: row; */
+
+.sct03-li {
+    border: 1px solid orange;
+    width: 427px;
+    height: 246px;
+}
+
+
+
+footer {
+    border-bottom: 2px dashed #bfd6be;
+    /* width: 1920px; */
+    height: 68px;
+}

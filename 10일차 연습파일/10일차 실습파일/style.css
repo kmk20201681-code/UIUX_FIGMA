@@ -1,0 +1,83 @@
+/* .product {
+    background-color: #C6CEC4;
+    width: 1920px;
+    display: flex;
+    flex-direction: column;
+} */
+
+/* 상단박스 */
+.sct-top {
+    height: 700px; 
+    /* width: 1920px; */
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: space-between;
+}
+.top-img-box01 {
+    background: #B2CEAB;
+    flex-grow: 1;
+}
+.top-img-box02 {
+    background: #8FAC88;
+    flex-grow: 1;
+}
+
+/* 더보기란 */
+.sct-bt-title-box {
+    display: flex; 
+    /* flex-direction: row; */
+    justify-content: space-between;
+    /* height: 200px; align-items: center; */
+    padding: 20px 60px;
+    background: #81917F;
+}
+
+
+/* 하단 상품박스 */
+.sct-bt-menu-box {
+    /* background: #C6CEC4; */
+    padding-left: 60px; padding-right: 60px;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.sct-bt-list {
+    /* display: flex; */
+    /* background: #B6C8B6; */
+    /* width: 100%; */
+    /* gap: 14px; */
+    flex-grow: 1; flex-basis: 0;
+    background: #B6C8B6;
+    border: 1px solid red;
+}
+.thumbnail {
+    height: 400px;
+}
+
+.bt-li-item {
+    background-color: #808b82;
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/* h3 {
+    color: var(--beautyofjoseon-co-kr-black, var(--main03-color, #000));
+    font-family: var(--font-family-Font-1, "DM Sans");
+    font-size: var(--font-size-13, 13px);
+    font-style: normal;
+    font-weight: var(--font-weight-700, 700);
+    line-height: var(--line-height-16_9, 16.9px);
+}
+
+h4 {
+    color: var(--beautyofjoseon-co-kr-black, var(--main03-color, #000));
+    font-family: var(--font-family-Font-1, "DM Sans");
+    font-size: var(--font-size-13, 13px);
+    font-style: normal;
+    font-weight: var(--font-weight-400, 400);
+    line-height: normal;
+} */
