@@ -1,0 +1,29 @@
+body {padding: 0; margin: 0;}
+a {
+    /* inherit -> 상속 */
+    color: inherit;
+    /* 텍스트 밑줄 -> text-decoration */
+    text-decoration: none;
+}
+
+button {
+    /* 기본값 노멀라이징 */
+    background-color: transparent;
+    padding: auto;
+    /* none -> 없다 */
+    border: none;
+    outline: auto;
+    /*  ※ 버튼태그는 기본값이 글자가 가운데 있기 때문에 따로 커스텀/지정 안해도 됨  */
+}
+
+
+/* html | <div>글자</div>
+css  |
+.div {
+    임의값 지정 
+    width: 500px;
+    padding: 12px 0;
+    background: gray;
+    텍스트 가운데 정렬 
+    text-align: center;
+} */

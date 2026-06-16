@@ -1,0 +1,43 @@
+.best-pro-btn {
+    border: 1px solid #E1DED9;
+    background: #FFF;
+    /* flex-grow 임의값 410px */
+    width: 410px ;
+    padding-top: 12px; padding-bottom: 12px;
+    /* 피그마에서 글씨체 속성 복사 */
+    color: #212529;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 21px; /* 150% */
+    letter-spacing: 0.06px;
+
+    /* 사용 안하는 코드 */
+    /* text-transform: capitalize;
+    font-family: Raleway;
+    font-style: normal; */
+    transition: 0.3s;
+}
+.best-pro-btn:hover {
+    background-color: #212529;
+    color: #FFF;
+}
+
+.view-more {
+    color: #333;
+    font-size: 16px;
+    
+    font-weight: 600;
+    line-height: 24px; /* 150% */
+
+    /* 사용하지 않는 코드 */
+    /*font-family: Raleway;
+    font-style: normal; */
+
+    transition: 0.7s;
+}
+.view-more:hover {
+    font-size: 20px;
+    /* 폰트 두께는 px을 사용하지 않음 */
+    font-weight: 400;
+}
