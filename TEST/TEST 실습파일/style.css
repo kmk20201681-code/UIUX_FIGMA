@@ -2,6 +2,8 @@ header {
     border: 1px solid red;
 }
 
+
+/* 메인 */
 main {
     border: 1px solid red;
 }
@@ -29,6 +31,9 @@ main {
 }
 
 
+
+
+/* 하단 */
 footer {
     border: 1px solid red;
 }
