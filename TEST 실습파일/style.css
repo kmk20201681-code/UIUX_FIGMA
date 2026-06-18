@@ -1,0 +1,129 @@
+header {
+    border: 1px solid red;
+}
+
+
+/* 메인 */
+/* <!-- 섹션 상단 부분 --> */
+main {
+    border: 1px solid red;
+}
+.bestsellers-section {
+    border: 1px solid orange;
+    padding: 124px 80px;
+}
+.ul-nav {
+    border: 1px solid green;
+    padding: 65px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.section-title {
+    border: 1px solid blue;
+}
+.view-all {
+    border: 1px solid blue;
+}
+
+
+/* <!-- 섹션 하단 부분 --> */
+.amp-swiper {
+    border: 1px solid green;
+    display: flex;
+}
+.best-product-list {
+    border: 1px solid blue;
+    
+}
+
+.best-product-list01 {border: 3px solid red;}
+.best-product-list02 {border: 3px solid rgb(253, 75, 75);}
+.best-product-list03 {border: 3px solid rgb(255, 118, 118);}
+.best-product-list04 {border: 3px solid rgb(250, 165, 165);}
+
+
+.product-img-box {
+    border: 1px solid pink;
+    height: 410px;
+    background: #EBEBEB;
+}
+
+
+.best-discount-title {
+    border: 1px solid pink;
+    padding-top: 40px;
+    padding-bottom: 42px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+}
+.best-discount-subhead {
+    border: 1px solid pink;
+    padding-bottom: 40px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+}
+.best-price-capacity {
+    border: 1px solid pink;
+    display: flex;
+    justify-content: space-between;
+    padding: 14px 0 24px 0;
+}
+
+
+.best-price {
+    border: 1px solid skyblue;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+}
+.best-capacity {
+    border: 1px solid skyblue;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+}
+.best-capacity-30ml {
+    border: 1px solid orange;
+    
+}
+
+.best-capacity-60ml {
+    border: 1px solid orange;
+}
+
+
+.best-pro-btn {
+    border: 1px solid #E1DED9;
+    background: #FFF;
+    /* flex-grow 임의값 410px */
+    /* width: 100%;를 쓰면 고정이 됨. 
+    -> 대신에 flex-grow: ; 사용 / 
+    단,grow사용하려면 부모에 flex에 부여해줘야 함 (display: flex;    flex-direction: column;) */
+    flex-grow: 1;
+    padding-top: 12px; padding-bottom: 12px;
+    /* 피그마에서 글씨체 속성 복사 */
+    color: #3a3d3b;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 21px; /* 150% */
+    letter-spacing: 0.06px;
+
+    /* 사용 안하는 코드 */
+    /* text-transform: capitalize;
+    font-family: Raleway;
+    font-style: normal; */
+
+    transition: 0.3s;
+}
+.best-pro-btn:hover {
+    background-color: #738b75;
+    color: #FFF;
+}
+
+/* 하단 */
+footer {
+    border: 1px solid red;
+}
