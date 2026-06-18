@@ -1,38 +1,45 @@
 
 /* 홈페이지 상단 */
-header {
-    border: 1px solid red;
-}
+
 
 
 /* 홈페이지 메인 */
-main {
-    border: 1px solid red;
-}
 
 .Bestseller-Section {
-    border: 5px solid orange;
+    /* border: 5px solid orange; */
     /* width: 1920px; => 가로 스크롤 활성화되기 때문에 고정 너비 x/ 대신 패딩값 설정 */
     padding: 124px 80px;
 }
 /* 섹션 안의 상단 부분 */
 .ul-nav {
-    border: 1px solid green;
+    /* border: 1px solid green; */
+    border-top: 1px solid #E1DED9;
     padding-top: 65px;  padding-bottom : 65px;
     display: flex;  justify-content : space-between;
 }
 
 .section-title {
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
+    color: #333;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 33.6px; /* 120% */
 }
 .view-all {
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
+    color: #333;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px; /* 150% */
+    /* 폰트 가져올 때 두가지 삭제 */
+    /* font-family: Raleway;
+    font-style: normal; */
 }
 
 /* 섹션 안의 하단 부분  */
 .amp-swiper {
-    border: 1px solid green;
-    display : flex;
+    /* border: 1px solid green; */
+    display : flex; gap: 40px;
 } 
 .best-product-list {
     /* 높이값 지정 x */
@@ -40,30 +47,38 @@ main {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
+    flex-basis: 0;
 }
 
-.best-product-list01 {border: 3px solid red;}
-.best-product-list02 {border: 3px solid rgb(253, 75, 75);}
-.best-product-list03 {border: 3px solid rgb(255, 118, 118);}
-.best-product-list04 {border: 3px solid rgb(250, 165, 165);}
-
-
-
 .best-img-box {
-    border: 1px solid orange;
+    /* border: 1px solid orange; */
     height: 410px;
     background-color: #ebebebeb;
 }
 .best-discount-title {
-    border: 1px solid orange;
+    /* border: 1px solid orange; */
+    color: #333;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px; /* 150% */
+}
+/* >(자신 선택자) : 부모와 자식관계를 선택하는 선택자
+-> a를 많이 쓰고, 클래스를 매번 달 수 없어서 css에서 이렇게 작성한다.*/
+.best-discount-title > a {
     padding-top: 40px; padding-bottom: 42px;
 }
+
 .best-discount-subhead {
-    border: 1px solid orange;
+    /* border: 1px solid orange; */
+    border-bottom: 1px solid #E1DED9;
     padding-bottom: 42px;
+    color: #333;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px; /* 150% */
 }
 .best-price-capacity {
-    border: 1px solid orange;
+    /* border: 1px solid orange; */
     padding-top: 14px; padding-bottom: 24px;
     display: flex ;
     /* 여기서 display: flex ;는 -> 정렬 + space-between을 사용하기 위함 */
@@ -71,17 +86,37 @@ main {
 }
 
 .best-price {
-    border: 1px solid orange;
+    /* border: 1px solid orange; */
+    color: #222;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 17px; /* 106.25% */
 }
 .best-capacity {
-    border: 1px solid orange;
+    /* border: 1px solid orange; */
+    /* span은 기본적으로 inline 을 가지고 있기 때문에 2.3 언저리 여백을 가지고 있다.
+    -> flex-item으로 만들어서 여백을 없이고 gap을 적용하는 방향이 가장 좋다.
+    inline은 기본적으로 디자인에 적용되면 안되는 여백을 가지고 있다.*/
+    display: flex; gap: 16px;
 }
 .best-capacity-30ml {
-    border: 1px solid orange;
+    /* border: 1px solid orange; */
+    color: #333;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17px; /* 121.429% */
+    text-decoration-line: underline;
+    text-decoration-style: solid;
 }
 
 .best-capacity-60ml {
-    border: 1px solid orange;
+    /* border: 1px solid orange; */
+    color: #333;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px; /* 121.429% */
 }
 
 
@@ -110,15 +145,8 @@ main {
     transition: 0.3s;
 }
 .best-pro-btn:hover {
-    background-color: #212529;
+    background-color: #596e5e;
     color: #FFF;
 }
 
-
-
-
-
 /* 홈페이지 하단 */
-footer {
-    border: 1px solid red;
-}
