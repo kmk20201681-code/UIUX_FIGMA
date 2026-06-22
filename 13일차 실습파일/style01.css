@@ -1,0 +1,110 @@
+.bestseller-section {
+    padding: 124px 80px;
+}
+
+/* <!-- bestsealler 상단 --> */
+.ul-nav {
+    /* background-color: antiquewhite; */
+    padding: 65px 0;
+    display: flex;  justify-content: space-between;
+}
+.section-title {
+    color: #333;   
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 33.6px; /* 120% */
+}
+.view-all {
+    color: #333;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px; /* 150% */
+}
+
+/* <!-- bestsealler 하단 --> */
+.amp-swiper {
+    /* background-color: cadetblue; */
+    gap: 40px;
+    display: flex;
+    
+}
+.best-product-list {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-basis: 0; 
+}
+.product-img-box {
+    /*  높이 임의값 지정 */
+    height: 410px; 
+    background-color: #ebebebeb;
+}
+.best-discount-title {
+    padding-top: 40px; padding-bottom: 42px;
+    color: #333;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px; /* 150% */
+}
+.best-discount-subhead {
+    border-bottom: 1px solid #E1DED9;
+    padding-bottom: 42px;
+    color: #333;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px; /* 150% */
+    text-transform: capitalize;
+}
+.best-price-capacity {
+    padding-top: 14px; padding-bottom: 24px;
+    display: flex;
+    justify-content: space-between;
+}
+.best-price {
+    color: #222;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 17px; /* 106.25% */
+}
+.best-capacity {
+    /* display: flex;써야 gap들어감 */
+    display: flex;
+    gap: 16PX;
+}
+.best-capacity-30ml {
+    color: #333;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17px; /* 121.429% */
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: auto;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
+}
+.best-capacity-60ml {
+    color: #333;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px; /* 121.429% */
+}
+
+
+.best-pro-btn {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid #E1DED9;
+    padding: 12px 0;
+    color: #212529;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 21px; /* 150% */
+    letter-spacing: 0.06px;
+    text-transform: capitalize;
+}
