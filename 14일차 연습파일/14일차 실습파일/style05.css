@@ -1,0 +1,13 @@
+/*   5단계 : 이미지, 부모 박스로 자르고 위치 지정 */
+
+.img-box05 {
+    background-color: #acceb1;
+    width: 500px; height: 500px;
+    overflow: hidden;
+    position: relative;
+} 
+
+.img-box05 > img {
+    position: absolute;
+    bottom: 0;
+}

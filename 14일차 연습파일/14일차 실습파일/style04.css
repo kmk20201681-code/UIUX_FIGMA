@@ -1,0 +1,11 @@
+
+ /* 4단계 : 너비 속성과 높이 속성 두가지 다 커스텀
+  (이미지, 종횡비 활성화 + 이미지 커스텀 사이즈 유지 + 이미지 중심 활성화 )*/
+
+ .img-box04 {
+    background-color: #9ebea2;
+}
+ .img-box04 > img{
+    width: 500px; height: 500px;
+    object-fit: cover;
+ }

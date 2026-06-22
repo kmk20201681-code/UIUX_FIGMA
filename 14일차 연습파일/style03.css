@@ -1,0 +1,9 @@
+.img-box02 {
+    background-color: green;
+}
+
+/* 3단계 : 너비 속성과 높이 속성 두가지 다 커스텀 
+-> 종횡비가 비활성화됨 (찌그러지는 현상) */
+.img-box02 > img {
+    width: 500px; height: 500px;
+} 

@@ -1,0 +1,7 @@
+/*  3단계 : 이미지, 너비 속성과 높이 속성 두가지 다 커스텀(종횡비 비활성화) */
+.img-box03 {
+    background-color: #7c977f;
+}
+.img-box03 > img {
+    width: 500px; height: 500px;
+}

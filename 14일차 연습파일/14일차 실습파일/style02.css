@@ -1,0 +1,8 @@
+/*  2단계 : 이미지, 이미지 너비와 높이 중 하나의 속성만 커스텀 (종횡비 유지) */
+.img-box02 {
+    background-color: #5f7562;
+}
+
+.img-box02 > img {
+    width: 500px; 
+}

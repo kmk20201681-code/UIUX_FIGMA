@@ -1,0 +1,10 @@
+/* 1단계 : 이미지, 박스 기본 커스텀  */
+
+
+.img-box01 {
+    background-color: #415043;
+}
+.img-box01 > img {
+    display: block;
+    width: 100%;
+}
