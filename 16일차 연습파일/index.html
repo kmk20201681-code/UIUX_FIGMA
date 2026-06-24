@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>picogram 상단바</title>
+    <title>picogram 상단바(2)</title>
     <link rel="stylesheet" href="nomal.css">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -11,9 +11,43 @@
     <header>
         <div class="popup">Sale doesn’t get better—up to 70% off SS26 styles.</div>
         <div class="top-bar">
-            <nav class="menu01">메뉴바</nav>
-            <h1 class="logo-box">로고</h1>
-            <div class="user-box">사용자 메뉴</div>
+            <nav class="menu01">
+                <!-- ul.menu01-ul>li.m01-item..m01-item0$*4 
+                 클릭했을때 나올 수 있도록 하는 코드  : A 태그 (target="_blank" title="" 같이 작성) -->
+                <ul class="menu01-ul">
+                    <li class="m01-item m01-item01"><a href="#" target="_blank" title="Menswear">Menswear</a></li>
+                    <li class="m01-item m01-item02"><a href="#" target="_blank" title="Womenswear">Womenswear</a></li>
+                    <li class="m01-item m01-item03"><a href="#" target="_blank" title="Everything else">Everything else</a></li>
+                    <li class="m01-item m01-item04"><a href="#" target="_blank" title="sale">sale</a></li>
+                    <li class="m01-item m01-item05"><a href="#" target="_blank" title="search">search</a></li>
+                </ul>
+                
+            </nav>
+            <h1 class="logo-box"><a href="#" target="_blank" title="home">
+                <!-- 로고를 누르면 보통 home으로 이동하기 때문에 title="home" 으로 작성 -->
+                <img src="#" alt="로고 이미지">
+            </a></h1>
+            <div class="user-box">
+                <!-- 쌤과 =>  ul.user-box-ul>li.user-item.user-item0$*4>a[href="#" target="_blank" title="search"] -->
+                <ul class="user-box-ul">
+                    <li class="user-item user-item01"><a href="#" target="_blank" title="English">English</a></li>
+                    <li class="user-item user-item02"><a href="#" target="_blank" title="login">login</a></li>
+                    <li class="user-item user-item03"><a href="#" target="_blank" title="wishlist">wishlist</a></li>
+                    <li class="user-item user-item04"><a href="#" target="_blank" title="bag">bag(0)</a></li>
+                </ul>
+                <!-- 개인 => ul.user-menu>li.u01-item.u01-item0$*4--> 
+                <!-- <ul class="user-menu">
+                    <li class="u01-item u01-item01"><a href="#" target="_blank" title="English">English</a></li>
+                    <li class="u01-item u01-item02"><a href="#" target="_blank" title="login">login</a></li>
+                    <li class="u01-item u01-item03"><a href="#" target="_blank" title="wishlist">wishlist</a></li>
+                    <li class="u01-item u01-item04">
+                        <a href="#" target="_blank" title="bag">bag</a>
+                        <a href="#" target="_blank" title="(0)">(0)</a></li>
+                </ul> -->
+            </div>
+            <!-- 이름 짓는 방법
+            ul:user-box-ul
+            li:user-box-li(또는 주로 item) -->
         </div>
     </header>
 </body>

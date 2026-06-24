@@ -17,6 +17,9 @@ header {
     width: 388px;
     gap: 16px;
 }
+.menu01-ul {
+    display: flex;
+}
 .logo-box {
     border: 1px solid orange;
 }
@@ -26,4 +29,7 @@ header {
     display: flex;
     justify-content: flex-end;
     gap: 16px;
+}
+.user-box-ul {
+    display: flex;
 }

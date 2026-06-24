@@ -1,0 +1,26 @@
+h1 {
+    font-weight: 700; font-size: 28px;
+    margin-top: 20px; 
+}
+h2 {
+    font-weight: 700; font-size: 21px;
+    margin-top: 20px; 
+}
+span {
+    background-color: pink;
+}
+/* [h태그 => 제목태그]
+1. h1태그는 html 문서 내에서 딱 한번만 사용할 수 있다.
+ㄴ> 보통 logo-box로 사용한다.
+2. 반드시 한번은 h1부터 h6까지 순서대로 사용해야 된다.
+ㄴ> ex. html 상단에 h2사용 -> html 하단에 h3사용
+ㄴ> ex. html 상단에 h1사용 후 h2사용 x -> html 하단에 h3사용 x 
+(올바른 코드 html)
+    <h1></h1>
+    <h2></h2>
+    <h3></h3>
+(틀린 코드 html)
+    <h1></h1>
+    <h3></h3>
+    -> 웹 표준 틀린 사항. 절대적으로 지켜야 함. 
+3. h1 태그 제외 h2~h3까지 여러번 사용 가능. */
