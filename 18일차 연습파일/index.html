@@ -5,13 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>18일차 연습파일</title>
     <link rel="stylesheet" href="nomal.css">
-    <link rel="stylesheet" href="style01.css">
+    <!-- <link rel="stylesheet" href="style01.css"> -->
     <link rel="stylesheet" href="style02.css">
-    <link rel="stylesheet" href="style03.css">
-    <link rel="stylesheet" href="style04.css">
-    <link rel="stylesheet" href="style05.css">
+    <!-- <link rel="stylesheet" href="style03.css"> -->
+    <!-- <link rel="stylesheet" href="style04.css"> -->
+    <!-- <link rel="stylesheet" href="style05.css"> -->
 </head>
 <body>
-    
+    <h1>position</h1>
+    <p>position은 위치를 지정하는 속성이다.</p>
+    <p><mark>값 종류</mark><span>static(기본값), absolute, fixed, relative</span></p>
+    <!-- css에서 지정하는설정들은 값이 있는데 바꿔주는 것이여서, 태그 사용시 static이 기본값으로 깔려 있다고 본다 -->
+
+
+    <h2>static(기본값)</h2>
+    <p>static(기본값) : x와 y축을 지정할 수 없다.</p>
+    <p><span>#display 이동</span> <span>#transform 이용</span></p>
+    <!-- 스판 사이 한번까지는 거리 띄울 수 있다. -->
+    <div class="static">static</div>
+
+    <div class="absolute">absolute</div>
+    <div class="fixed">fixed</div>
+
+    <h2>relative: absolute의 x와 y좌표 기준 지정 </h2>
+    <p>부모태그만 지정 x => absolute위에 있는 모든 태그에 지정 가능 (혈연 관계일때만 가능)</p>
+    <p>relative는 위치 속성(left: ; right: ; top: ; bottom: ;)을 사용 할 수 없다.</p>
+    <div class="relative">relative
+        <div class="absolute">absolute</div>
+    </div>
 </body>
 </html>
