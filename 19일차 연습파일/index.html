@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>19일차 연습파일</title>
+    <link rel="stylesheet" href="nomal.css">
+    <!-- <link rel="stylesheet" href="style01.css"> -->
+    <!-- <link rel="stylesheet" href="style02.css"> -->
+    <!-- <link rel="stylesheet" href="style03.css"> -->
+    <!-- <link rel="stylesheet" href="style04.css"> -->
+    <!-- <link rel="stylesheet" href="style05.css"> -->
+    <link rel="stylesheet" href="style06.css">
+</head>
+<body>
+    <!-- 상단 구현 -->
+    <header>
+        <div class="popup">Sale doesn’t get better—up to 70% off SS26 styles.</div>
+        <div class="top-bar">
+            <nav class="menu01">
+                <!-- ul.menu01-ul>li.m01-item..m01-item0$*4 
+                 클릭했을때 나올 수 있도록 하는 코드  : A 태그 (target="_blank" title="" 같이 작성) 
+                 ul의 자식으로는 li만 들어올 수 있다. -->
+                <ul class="menu01-ul">
+                    <li class="m01-item m01-item01"><a href="#" target="_blank" title="Menswear">Menswear</a></li>
+                    <li class="m01-item m01-item02"><a href="#" target="_blank" title="Womenswear">Womenswear</a></li>
+                    <li class="m01-item m01-item03"><a href="#" target="_blank" title="Everything else">Everything else</a></li>
+                    <li class="m01-item m01-item04"><a href="#" target="_blank" title="sale">sale</a></li>
+                    <li class="m01-item m01-item05"><a href="#" target="_blank" title="search">search</a></li>
+                </ul>
+                <div class="menu02">1차 메뉴안에 2차 메뉴</div>
+            </nav>
+            <h1 class="logo-box"><a href="#" target="_blank" title="home">
+                <!-- 로고를 누르면 보통 home으로 이동하기 때문에 title="home" 으로 작성 -->
+                <img src="./image/logo-img.svg" alt="로고 이미지">
+            </a></h1>
+            <div class="user-box">
+                <!-- 쌤과 =>  ul.user-box-ul>li.user-item.user-item0$*4>a[href="#" target="_blank" title="search"] -->
+                <ul class="user-box-ul">
+                    <li class="user-item user-item01"><a href="#" target="_blank" title="English">English</a></li>
+                    <li class="user-item user-item02"><a href="#" target="_blank" title="login">login</a></li>
+                    <li class="user-item user-item03"><a href="#" target="_blank" title="wishlist">wishlist</a></li>
+                    <li class="user-item user-item04"><a href="#" target="_blank" title="bag">bag(0)</a></li>
+                </ul>
+                <!-- 개인 => ul.user-menu>li.u01-item.u01-item0$*4--> 
+                <!-- <ul class="user-menu">
+                    <li class="u01-item u01-item01"><a href="#" target="_blank" title="English">English</a></li>
+                    <li class="u01-item u01-item02"><a href="#" target="_blank" title="login">login</a></li>
+                    <li class="u01-item u01-item03"><a href="#" target="_blank" title="wishlist">wishlist</a></li>
+                    <li class="u01-item u01-item04">
+                        <a href="#" target="_blank" title="bag">bag</a>
+                        <a href="#" target="_blank" title="(0)">(0)</a></li>
+                </ul> -->
+            </div>
+            <!-- 이름 짓는 방법
+            ul:user-box-ul
+            li:user-box-li(또는 주로 item) -->
+        </div>
+    </header>
+    <!-- 18일차 연습파일 : 예시 -->
+    <!-- <div class="ex">
+        <h1>position</h1>
+        <p>position은 위치를 지정하는 속성이다.</p>
+        <p><mark>값 종류</mark><span>static(기본값), absolute, fixed, relative</span></p>
+        css에서 지정하는설정들은 값이 있는데 바꿔주는 것이여서, 태그 사용시 static이 기본값으로 깔려 있다고 본다
+    
+    
+        <h2>static(기본값)</h2>
+        <p>static(기본값) : x와 y축을 지정할 수 없다.</p>
+        <p><span>#display 이동</span> <span>#transform 이용</span></p>
+        스판 사이 한번까지는 거리 띄울 수 있다.
+        <div class="static">static</div>
+    
+        <div class="absolute">absolute</div>
+        <div class="fixed">fixed</div>
+    
+        <h2>relative: absolute의 x와 y좌표 기준 지정 </h2>
+        <p>부모태그만 지정 x => absolute위에 있는 모든 태그에 지정 가능 (혈연 관계일때만 가능)</p>
+        <p>relative는 위치 속성(left: ; right: ; top: ; bottom: ;)을 사용 할 수 없다.</p>
+        <div class="relative">relative
+            <div class="absolute">absolute</div>
+        </div>
+    </div> -->
+
+</body>
+</html>
