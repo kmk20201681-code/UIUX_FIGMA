@@ -68,10 +68,19 @@
     font-family: Inter;
     font-style: normal; */
 }
+
+
+
+
+
+/* ---------------- 2차 메뉴 ---------------- */
+
+
 /* css는 순서대로 나온다. -> 위에서 아래 순으로 강함, 이벤트 코드는 아래에 작성한다-> 로딩 오류 조심 */
 .menu02 {
-    background-color: rgb(191, 197, 192);
+    /* background-color: rgb(191, 197, 192); */
     border-top: 1px solid rgba(0, 0, 0, 0);
+    /* 기존 height: 0; , height: 400px; 커스텀 할때 */
     height: 0; transition: 0.5s;
     overflow: hidden;
     /* display: none; -> 자연스럽게 내려오게 하려면 사용하면 안됨. transition을 사용할 수가 없음 */
@@ -81,17 +90,132 @@
     /* top: 100%; ->  top-bar의 높이값 */
     left: 0; right: 0; top: 100%;
     /* left: 20px; right: 20px; top: 100%; */
+    /* 그리드 가운데 정렬 ↓ */
+    display: flex;
+    justify-content: center;
 }
 /* .menu01번에 마우스를 올리면 .menu02가 나타난다 */
 .menu01:hover > .menu02 {
     border-top: 1px solid rgba(0, 0, 0, 1);
     height: 400px;
 }
+/* 그리드많이 사용하고 각각 다른 설정이 들어가서 > 자식요소 사용 */
+.menu02 > .container {
+    /* border: 1px solid #333; */
+    /* 너비 임의 지정 width: 1620px; */
+    width: 1620px;
+    display: flex;
+}
+.mn02-img-box {
+    /* 크기지정 width: 400px; + 나머지 차지 flex-grow: 1; */
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mn02-img-item {
+    background-color: orange;
+    width: 300px; height: 300px;
+}
+/* 이미지 크기 조정할 때 좋지 않은 예시 
+.mn02-img-item > a > img
+좋은 예시는 띄어쓰기만 사용 하고, 후손을 의미하다 
+> 는 가독성 때문에 자식에게만 사용하는 것 */
+.mn02-img-item > a {
+    height: 100%;
+}
+
+.mn02-img-item img {
+    /* 종횡비가 유지되면서 위 박스의 크기만큼 사이즈 가져와야할때 */
+    width: 100%; height: 100%;
+    /* 대신 높이가 맞지 않아서 조정 
+    -> auto가 기본값ㅇ, a태그에서 높이 가져오기 a태그에 height: 100%; 주고 
+    아래 코드 작성해서 접근성까지 같이 해결*/
+    object-fit: cover;
+}
+ 
+.mn02-nav {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mn02-nav>ul {
+    display: flex; gap: 80px;
+    /* border: 1px solid #333; */
+}
+
+/* .m02-item -> li , 글자커스텀 할때 다른 요소들에 방해가 가지 않도록 a까지 지정 */
+.m02-item>a {
+    font-size: 54px;
+    font-weight: 700;
+    color: #333;
+    transition: 0.3s;
+}
+/* .m02-item:hover 에 올렸을때 a태그가 바뀌는 현상  */
+.m02-item:hover > a {
+    color: #73867a;
+    text-decoration: underline;
+}
+
+
+
+
+/* ---------------- 3차 메뉴 ---------------- */
+
+.m02-item {
+    /* border: 1px solid red; */
+    /* 2차 메뉴의 아이템에 좌표 지정을 만들어 두고, 
+    3차 메뉴에 거리 지정left: 0; right: 0; top:  calc(100% + 20px); -> 칼크속성으로 2차 메뉴 바로 밑에 올 수 있도록 한다.  */
+    position: relative;
+}
+.mn03-nav {
+    /* border: 1px solid orange; */
+    /* 2차 메뉴와 3차 메뉴를 분리 시킨다.-> ul에 클래스명 지정해서 불러와서 포지션주기  */
+    position: absolute;
+    left: 0; right: 0; top:  calc(100% + 20px);
+    /* 3차 메뉴의 정렬 */
+    /* display: flex;--> none처리 해서 지움 */
+    justify-content: space-between;
+    /* 평소에 숨겨야 하니까 none처리 -> 구조 삭제 */
+    display: none;
+}
+/* .m02-item 마우스 올렸을 때 :hover , .mn03-nav가 나와야한다 */
+.m02-item:hover > .mn03-nav {
+    display: flex;
+}
+
+/* ul li를 후손으로 선택하게 될때 바로 li로 가면 다른 li와 중복될 수 있어서 ul > li까지 적는 편 */
+/* li에 커스텀 하지 않는다 4차 메뉴가 들어올 수 있어서 아래 내용보다는 m03-item을 불러와서 지정커스텀 */
+/* .m02-item > ul > li {
+    border: 1px solid green;
+} */
+.m03-item > a {
+    font-size: 24px; font-weight: 700;
+    color: #565656;
+    transition: 0.3s;
+}
+.m03-item:hover > a {
+    color: #333;
+    text-decoration: underline;
+}
+
+
+
+
+
+/* ---------------- 탑바의 로고 박스 ---------------- */
+
 .logo-box {
     /* border: 1px solid orange; */
     display: flex;
     justify-content: flex-end;
 }
+
+
+
+/* ---------------- 탑바의 유저박스 ---------------- */ 
+
 .user-box {
     /* border: 1px solid orange; */
     width: 388px;
