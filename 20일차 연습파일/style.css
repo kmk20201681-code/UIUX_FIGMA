@@ -1,0 +1,120 @@
+/* transition 애니메이션 학습 후 2차 상단바 적용 -> 1일차 부터 여기까지 시험범위 7.3 (2시간 내) */
+
+/* 상단바 구현 */
+/*  불필요한 선 모두 제거하는 css 파일 */
+
+/* header {
+    border: 1px solid #000;
+} */
+.popup::before {
+    /* 아무것도 작성하지 않아도 content: ""; 따옴표 코드 작성 필수 */
+    content: "";
+    /* border: 1px solid red; */
+    width: 30px;
+}
+.popup {
+    background: #E8E8E8;
+    padding: 12px 0;
+    /* text-align: center; */
+    color: #000;
+    /* font-size: 10px;정수로 할 것 */
+    font-size: 10px;
+    line-height: 15px; /* 145.631% */
+    /* 삭제 => 
+    font-family: Inter;
+    font-weight: 400;
+    font-style: normal; */
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px; padding-right: 20px; 
+}
+.popup::after {
+    content: "X";
+    font-size: 20px;
+    cursor: pointer;
+    /* border: 1px solid red; */
+    width: 30px; text-align: right;
+}
+.top-bar {
+    /* border: 1px solid red; */
+    padding: 16px 20px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    transition: 0.5s;
+}
+.top-bar:hover {
+    /* calc(16px + 8px) -> 속성값에서 사칙연산 가능함 */
+    /* padding: calc(16px + 8px); */
+    padding-top: calc(16px + 8px);
+    padding-bottom: calc(16px + 8px);
+}
+.menu01 {
+    /* border: 1px solid orange; */
+    width: 388px;
+}
+.menu01-ul {
+    display: flex; gap: 16px; 
+    align-items: center; 
+    height: 100%;
+    /* background-color: green; */
+}
+.m01-item {
+    color: #000;
+    font-size: 11px;
+    line-height: 15px; /* 136.364% */
+    /* text-transform: uppercase;
+    font-weight: 400;
+    font-family: Inter;
+    font-style: normal; */
+}
+/* css는 순서대로 나온다. -> 위에서 아래 순으로 강함, 이벤트 코드는 아래에 작성한다-> 로딩 오류 조심 */
+.menu02 {
+    background-color: rgb(191, 197, 192);
+    border-top: 1px solid rgba(0, 0, 0, 0);
+    height: 0; transition: 0.5s;
+    overflow: hidden;
+    /* display: none; -> 자연스럽게 내려오게 하려면 사용하면 안됨. transition을 사용할 수가 없음 */
+    position: absolute;
+    /* 상단바 안 구성요소가 많은 경우 스크롤과 합쳐져 가로 스크롤 발생 가능성 높음(최악) width: 100%;  */
+    /* width: 100%;  -> 4번 css 주석처리 */
+    /* top: 100%; ->  top-bar의 높이값 */
+    left: 0; right: 0; top: 100%;
+    /* left: 20px; right: 20px; top: 100%; */
+}
+/* .menu01번에 마우스를 올리면 .menu02가 나타난다 */
+.menu01:hover > .menu02 {
+    border-top: 1px solid rgba(0, 0, 0, 1);
+    height: 400px;
+}
+.logo-box {
+    /* border: 1px solid orange; */
+    display: flex;
+    justify-content: flex-end;
+}
+.user-box {
+    /* border: 1px solid orange; */
+    width: 388px;
+    display: flex;
+    justify-content: flex-end;
+    /* align-items: stretch; */
+}
+.user-box-ul {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    /* background-color: blue; */
+    /* height: auto; 100% */
+}
+
+.user-item {
+    color: #000;
+    font-size: 11px;
+    line-height: 15px; /* 136.364% */
+
+    /* text-transform: uppercase;
+    text-align: right;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400; */
+}
