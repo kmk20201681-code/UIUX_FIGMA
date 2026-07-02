@@ -14,7 +14,7 @@
     color: #000;
     font-size: 10px;
     line-height: 15px; /* 145.631% */
-    /* 패딩을 애초에 본문 popup 에 주기 */
+    /* 패딩값을 기준 popup 에 */
     padding-left: 20px; padding-right: 20px; 
 }
 .popup::after {
@@ -32,7 +32,7 @@
     padding: 16px 20px;
     display: flex;
     justify-content: space-between;
-    position: relative;
+    
 }
 
 /* 탑바 네비 */
@@ -53,16 +53,28 @@
     line-height: 15px; /* 136.364% */
 }
 
+/* 로고 박스 */
+.logo-box {
+    /* border: 1px solid orange; */
+    display: flex;
+    justify-content: flex-end;
+}
+
+
 /* 탑바 유저 */
 
 .user-menu {
+    /* border: 1px solid orange; */
     width: 388px;
+    display: flex;
+    justify-content: flex-end;
+    /* align-items: stretch; */
 }
 .user-menu-ul {
     display: flex;
     gap: 16px;
-    height: 100%;
-    justify-content: flex-end;
+    /* height: 100%; */
+    /* justify-content: flex-end; */
     align-items: center;
 }
 .user-menu-li {
